@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="styleclock.css">
+    <link id="lines"rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    
+
+    <input type="checkbox" id="click">
+  <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <nav >
+    <ul>
+      <li><a id="word" class="active" href="#">Clock</a></li>
+      <li><a id="word"href="indexcounter.html">Counter</a></li>
+      <li><a id="word"href="indexchrono.html">Chrono</a></li>
+    </ul>
+  </nav>
+    
+
+    <h1>DIGITAL-clock</h1>
+    <div class="box" id="boxes">
+        <label id="date"></label>
+        <span class="box" id="box1">
+      
+            <label class="stop" id="hours" for="box1">00</label>
+     
+        </span>
+        <span class="box" id="box2">
+     
+            <label class="stop" id="minutes" for="box3">00</label>
+      
+        </span>
+        <span class="box" id="box3">
+      
+            <label class="stop" id="seconds" for="box3">00</label>
+      
+         </span>
+    </div>
+ 
+  
+  <div id="slide">
+   <img src="rocket.png" class="rocket1" id="rocketImage1">
+   <img src="rocket.png" class="rocket2" id="rocketImage2">
+  </div>
+  <script src="indexclock.js" ></script>
+</body>
+</html>

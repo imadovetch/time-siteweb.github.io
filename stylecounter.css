@@ -1,0 +1,338 @@
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+  user-select: none;
+  background-color: #000;
+}
+
+#continue{
+    display: none;
+    
+    font-size: 20px;
+
+}
+#reset{
+    background-color: brown;
+}
+#pause{
+    display: none;
+}
+body{
+    background-image: url(premium_photo-1674086524724-0a9c2ff391f9.avif);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position:center;
+}
+h1{
+  color: rgba(243, 243, 247, 0.815);
+  margin-top: 0px;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 10px;
+  
+  font-weight: 1000;
+  transition: 0.5s;
+  position: relative;
+}
+#boxes{
+    position: relative;
+    margin: 20px ;
+    justify-content: center;
+    margin-top: 80px;
+    display: flex;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255),-5px -5px 50px rgb(0, 0, 0);
+    border-radius: 40px;
+    height: 300px;
+}
+#box1{
+    margin: 20px;
+    
+    margin-top: 40px;
+   display: flex; 
+   width: 200px;
+   height: 240px;
+   background: rgba(0, 0, 0, 0.592);
+   
+   color: rgb(248, 4, 4);
+   flex-direction: column;
+  
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) ;
+   border-radius: 30px;
+}
+
+#box2{
+    margin: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
+   display: flex; 
+   width: 200px;
+   height: 240px;
+   background: rgba(0, 0, 0, 0.473);
+   border-radius: 30px;
+   color: rgb(5, 226, 255);
+   flex-direction: column;
+  
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   border-radius: 30px;
+}
+#box3{
+    margin: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
+   display: flex; 
+   width: 200px;
+   height: 240px;
+   background: rgba(0, 0, 0, 0.592);
+   
+   color: rgb(255, 5, 5);
+   flex-direction: column;
+  
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   border-radius: 30px;
+}
+.start{
+  
+    background-color: rgb(35, 101, 110);
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    
+    border-radius: 20px;
+    
+    margin: 10px;
+    border-color: rgb(232, 201, 201);
+}
+#strat1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border: 100px;
+    
+}
+.up:hover{
+    background-color: rgba(163, 44, 44, 0.877);
+    border: none;
+}
+.up{
+    
+    font-size: 40px;
+    height: 35px;
+    width: 40px;
+    padding-right: 46px;
+    padding-bottom: 43px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 15px white, -3px -3px 15px white;
+    color: azure;
+}
+.down:hover{
+    background-color: rgba(163, 44, 44, 0.877);
+    border: none;
+}
+.down{
+    
+    font-size: 40px;
+    height: 35px;
+    width: 40px;
+    padding-right: 45px;
+    padding-bottom: 43px;
+    box-shadow: 3px 3px 15px white, -3px -3px 15px white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: azure;
+}
+.start:hover {
+    background-color: rgb(211, 81, 81);
+    cursor: pointer;
+}
+#text{
+    color: rgb(212, 212, 212);
+    font-family:   Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 15px  rgb(209, 209, 209), -5px -5px 15px  rgb(0, 0, 0);
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    opacity: 80em;
+}
+.rocket1 {
+  width: 200px;
+  position: absolute;
+  left: 150%;
+  top: -55px;
+  animation: rocket1 10s linear infinite;
+  transform: translateX(-200px) rotate(90deg);
+  background-color: #00000000;
+}
+
+@keyframes rocket1 {
+  0% {
+    left: 0;
+    opacity: 0.3;
+  }
+  100% {
+    right: 105%;
+    opacity: 1;
+  }
+}
+
+.rocket2 {
+  width: 200px;
+  position: absolute;
+  right: 150%;
+  top: 19%;
+  animation: rocket2 10s linear infinite;
+  transform: translateX(200px) rotate(-90deg);
+  background-color: rgba(240, 255, 255, 0);
+}
+
+@keyframes rocket2 {
+  0% {
+    right: 0;
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#down2{
+    color: black;
+    background-color: white ;
+
+}
+#up2{
+    color: black;
+    background-color: white ;
+    
+}
+#down2:hover{
+    background-color: rgba(163, 44, 44, 0.877);
+    box-shadow: 3px 3px 15px , -3px -3px 15px ;
+    border: none;
+}
+#up2:hover{
+    background-color: rgba(163, 44, 44, 0.877);
+    box-shadow: 3px 3px 15px , -3px -3px 15px ;
+    border: none;
+}
+.stop{
+    opacity: 3 ;
+}
+#slide {
+  height: 22vh;
+  background-color: rgba(201, 25, 25, 0.649);
+  overflow: hidden;
+  position: relative;
+  margin-top: 1%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3) inset,
+              0px -5px 10px rgba(0, 0, 0, 0.3) inset;
+              opacity: 0.5;
+              opacity: 0.7;
+  border-style: groove;
+  border-left: none;
+  border-right: none;
+  border-color: rgba(131, 117, 98, 0);
+  border-width: 9px;
+} 
+nav ul {
+  position: absolute;
+  top: 20vh;
+  left: -100%;
+  height: 55vh;
+  width: 25%;       
+     
+  background-color: rgba(209, 19, 19, 0.356);
+  transition: all 0.3s ease;
+  border-top-right-radius:40px; 
+  border-bottom-right-radius:40px;
+  z-index: 999;
+}
+nav ul li{
+  background-color: rgba(190, 141, 48, 0);
+  transition: all 0.3s ease;
+  margin-top: 0px;
+  
+  padding-bottom: 39px;
+}
+nav ul li a{
+  
+  display: flex;
+  margin-top: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 41.9px 30px;
+  font-weight: 500;
+  font-size: 50px;
+  border-radius: 50px;
+  letter-spacing: 6px;
+  background: #b98686;
+  
+  
+}
+nav ul li a.active{
+  background-color: #ff0202;
+  
+}
+nav ul li a.active:hover{
+  background-color: #ff0202;
+}
+nav ul li a:hover{
+  color: #111;
+  background-color: rgb(243, 120, 5);
+}
+.menu-btn i{
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #d61313;
+  font-size: 40px;
+  cursor: pointer;
+  
+}
+.menu-btn i:hover{
+  color: aqua;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#click:checked ~ nav ul {
+  left: 0;
+}
+
+
+
+@media (max-width: 720px){
+nav ul {
+    position: absolute;
+    top: 20vh;
+    left: -100%;
+    height: 55vh;
+    width: 100%;       
+       
+    background-color: rgba(59, 143, 240, 0.356);
+    transition: all 0.3s ease;
+    border-top-right-radius:40px; 
+    border-bottom-right-radius:40px;
+    z-index: 999;
+  }
+}

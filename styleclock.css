@@ -238,3 +238,12 @@ h1{
       z-index: 999;
     }
   }
+  #seconds,
+  #minutes,
+  #hours{
+    border-color: #ffffff;
+    border-style: ridge ;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+  }
